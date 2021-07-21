@@ -27,7 +27,7 @@ export function threeSum(nums: number[]): number[][] {
 }
 
 export function ngThreeSum(nums: number[]): number[][] {
-  if (nums.length > 0 && nums.length > 3000) return [];
+  if (nums.length < 3) return [];
   let answers = new Set<string>();
   nums.sort((a, b) => a - b);
   for (let i = 0; i < nums.length - 2; i++) {
