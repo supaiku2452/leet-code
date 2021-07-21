@@ -15,7 +15,6 @@ export function threeSum(nums: number[]): number[][] {
         );
         rightPointer--;
         leftPointer++;
-        // break;
       } else if (sum > 0) {
         rightPointer--;
       } else {
