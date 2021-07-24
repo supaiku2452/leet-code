@@ -42,3 +42,27 @@ export function addTwoNumbers(
 
   return listNodes[0] ?? null;
 }
+
+export function addTwoNumbersFaster(l1: ListNode | null, l2: ListNode | null) {
+  return _faster(l1, l2);
+}
+
+const _faster = (
+  left: ListNode | null,
+  right: ListNode | null,
+  curryOver: number = 0
+): ListNode | null => {
+  if (left === null && right === null) {
+    return curryOver === 0 ? null : new ListNode(curryOver);
+  }
+
+  const currentSum = (left?.val ?? 0) + (right?.val ?? 0) + curryOver;
+  return new ListNode(
+    currentSum % 10,
+    _faster(
+      left?.next ?? null,
+      right?.next ?? null,
+      Math.floor(currentSum / 10)
+    )
+  );
+};
