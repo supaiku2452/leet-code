@@ -19,3 +19,13 @@ export function reverse(x: number): number {
 function isRangeOver(x: number): boolean {
   return !(x >= 2 ** 31 * -1 && x <= 2 ** 31 - 1);
 }
+
+export function reverseSimply(x: number): number {
+  if (x === 0 || isRangeOver(x)) {
+    return 0;
+  }
+  const signedNum =
+    parseInt(x.toString().split("").reverse().join("")) * Math.sign(x);
+
+  return isRangeOver(signedNum) ? 0 : signedNum;
+}

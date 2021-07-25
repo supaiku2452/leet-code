@@ -1,4 +1,4 @@
-import { reverse } from "./reverseInteger";
+import { reverse, reverseSimply } from "./reverseInteger";
 
 describe("reverse integer test", () => {
   it.each([
@@ -9,5 +9,6 @@ describe("reverse integer test", () => {
     { input: -2147483412, expected: -2143847412 },
   ])("$input", ({ input, expected }) => {
     expect(reverse(input)).toEqual(expected);
+    expect(reverseSimply(input)).toEqual(expected);
   });
 });
