@@ -1,4 +1,4 @@
-import { ListNode } from "../../medium/addTwoNumbers/ListNode";
+import { ListNode } from "../../medium/0002--add-two-numbers/ListNode";
 
 function toAry(l: ListNode | null, a: number[]): number[] {
   if (l === null) return a;

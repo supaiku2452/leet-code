@@ -1,4 +1,4 @@
-import { reverse, reverseSimply } from "./reverseInteger";
+import { reverse, reverseSimply } from "./index";
 
 describe("reverse integer test", () => {
   it.each([

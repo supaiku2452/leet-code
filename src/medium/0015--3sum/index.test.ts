@@ -1,4 +1,4 @@
-import { ngThreeSum, threeSum } from "./threeSum";
+import { ngThreeSum, threeSum } from "./index";
 
 const pattern = [
   {

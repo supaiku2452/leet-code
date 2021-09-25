@@ -1,4 +1,4 @@
-import { longestCommonPrefix } from "./longestCommonPrefix";
+import { longestCommonPrefix } from "./index";
 
 describe("longest common prefix test", () => {
   it.each([

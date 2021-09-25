@@ -1,4 +1,4 @@
-import { isPalindrome, isPalindromeNumberApproach } from "./palindromeNumber";
+import { isPalindrome, isPalindromeNumberApproach } from "./index";
 
 describe("palindrome number test", () => {
   it.each([

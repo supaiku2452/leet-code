@@ -1,4 +1,4 @@
-import { mergeTwoLists } from "./mergeTwoSortedLists";
+import { mergeTwoLists } from "./index";
 import { createListNodes, toAry } from "./utils";
 
 describe("merge-two-sorted-lists test", () => {

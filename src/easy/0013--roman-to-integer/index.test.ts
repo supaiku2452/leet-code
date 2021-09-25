@@ -1,4 +1,4 @@
-import { romanToInt, romanToIntegerSimply } from "./romanToInteger";
+import { romanToInt, romanToIntegerSimply } from "./index";
 
 describe("roman to integer tests.", () => {
   const pattern = [

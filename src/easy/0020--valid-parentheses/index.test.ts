@@ -1,4 +1,4 @@
-import { isValid } from "./validParentheses";
+import { isValid } from "./index";
 
 describe("valid-parentheses test", () => {
   it.each([

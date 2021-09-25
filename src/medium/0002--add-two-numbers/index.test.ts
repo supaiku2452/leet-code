@@ -1,5 +1,5 @@
 import { ListNode } from "./ListNode";
-import { addTwoNumbers, addTwoNumbersFaster } from "./addTwoNumbers";
+import { addTwoNumbers, addTwoNumbersFaster } from "./index";
 
 const createListNodes = (input: number[]): ListNode =>
   input
